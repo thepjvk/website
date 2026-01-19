@@ -1,0 +1,145 @@
+/* ====== HERE ARE ALL THE ANIMATIONS ====== */
+
+/*Animations for the navbar*/
+@keyframes top-in{
+    from{
+        position: relative;
+        top: -75px;
+    }
+    to{
+        position: relative;
+        top: 0;
+    }
+}
+
+@keyframes fade-in{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+@keyframes pad{
+    0%{
+        position: relative;
+    }
+    20%{
+        position: relative;
+        top: -10px;
+    }
+    30%{
+        position: relative;
+        top: -100px;
+    }
+    55%{
+        position: relative;
+        top: -50px;
+    }
+    65%{
+        position: sticky;
+        top: 0;
+    }
+    75%{
+        position: sticky;
+        top: 0;
+    }
+    100%{
+        position: sticky;
+        top: 0;
+        height: 40px;
+    }
+}
+
+/*Animations for the first aside*/
+
+@keyframes left-in{
+    from{
+        position: relative;
+        left: -210px;
+    }
+    to{
+        position: relative;
+        left: 0;
+    }
+}
+
+/*Animations for the second aside*/
+
+@keyframes upward{
+    from{
+        transform: translateY(0);
+    }
+    to{
+        transform: translateY(-100%);
+    }
+}
+
+@keyframes left-in{
+    from{
+        position: relative;
+        left: -200px;
+    }
+    to{
+        position: relative;
+        left: 0;
+    }
+}
+
+/*Animations for the first aside*/
+
+@keyframes downward{
+    from{
+        transform: translateY(-100%);
+    }
+    to{
+        transform: translateY(0%);
+    }
+}
+
+@keyframes right-in{
+    from{
+        position: relative;
+        right: -200px;
+    }
+    to{
+        position: relative;
+        right: 0;
+    }
+}
+
+
+/*Animations for the elements in the main*/
+
+
+@keyframes h1{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+@keyframes h2{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+@keyframes button{
+    0%{
+        opacity: 0;
+    }
+    20%{
+        opacity: 1;
+    }
+    100%{
+        box-shadow: 0 0 10px var(--lightblue);
+        scale: 1.05;
+    }
+}
