@@ -54,7 +54,7 @@ p{
 }
 
 
-/*=======ALL THE COLORS AND FONT-SIZES USED IN THE WEBSITE=======*/
+/* =======ALL THE COLORS AND FONT-SIZES USED IN THE WEBSITE======= */
 
 :root{
 
@@ -67,7 +67,7 @@ p{
     --paragraph-color: hsl(0, 0%, 68%);
     --shadow: hsl(0, 0%, 35%);
     --light-shadow: hsl(0, 0%, 45%);
-    --black-for-opacity: #1111117c; 
+    --black-for-opacity: #1111117c;
 
 /* The palette colors "RGBs" */
     --blue: hsl(215, 85%, 55%);
@@ -76,7 +76,6 @@ p{
     --red: hsl(0, 75%, 50%);
     --green: hsl(135, 70%, 50%);
     --orange: hsl(25, 85%, 55%);
-
     --orange2: hsl(45, 85%, 55%);
     --yellow: hsl(55, 90%, 55%);
     --purple: hsl(275, 70%, 55%);
@@ -147,7 +146,7 @@ p{
 --gap-xxxxxxl: 3rem;
 }
 
-/* Light Mode Classes */
+/* ======Light Mode Classes====== */
 .lm-background-main {
     background-color: hsl(220, 15%, 95%);
 }
@@ -188,7 +187,7 @@ html{
     scrollbar-color: var(--subtitle-color) transparent;
 }
 
-/*======HEADER======*/
+/* ======HEADER====== */
 
 .header{
     display: flex;
@@ -198,9 +197,6 @@ html{
     justify-content: space-between;
     transition: all .3s ease-in-out;
     align-items: center;
-    animation: pad ease-in-out both;
-    animation-timeline: scroll();
-    overflow-y: hidden;
     position: relative;
     z-index: 10;
     box-shadow: 0 0 10px var(--light-shadow);
@@ -208,7 +204,12 @@ html{
 }
 
 .header__in{
-    animation: top-in .4s cubic-bezier(.29,.97,.3,.96) both;
+    animation: top-in .3s cubic-bezier(.29,.97,.3,.96) both;
+}
+
+.header__scroll{
+    animation: header-scroll ease-in-out both;
+    animation-timeline: scroll();
 }
 
 .header img{
@@ -231,6 +232,7 @@ html{
     display: flex;
     position: relative;
     height: 100%;
+    position: relative;
 }
 
 .header__link{
@@ -257,7 +259,21 @@ html{
     transition: all .2s ease-in-out;
 }
 
-/*======MAIN SECTION======*/
+
+.header__sublist{
+    background-color: var(--background-secondary);
+    color: var(--subtitle-color);
+    width: 130%;
+    position: absolute;
+    left: 0;
+    bottom: -30px;
+}
+
+.sublist__tr li{
+    font-weight: bolder;
+}
+
+/* ======MAIN SECTION====== */
 
 .main__wrapper{
     display: flex;
@@ -289,14 +305,14 @@ html{
     padding-top: var(--padding-xxxxxl);
     color: var(--blue);
     animation: h1 .2s cubic-bezier(.29,.97,.3,.96) both;
-    animation-delay: .2s;
+    animation-delay: .4s;
 }
 
 .main__h2{
     font-size: var(--font-size-h4);
     color: var(--title-color);
     animation: h2 .9s cubic-bezier(.29,.97,.3,.96) both;
-    animation-delay: .4s;
+    animation-delay: .8s;
 }
 
 .main__button{
@@ -309,16 +325,14 @@ html{
     border-radius: .7rem;
     transition: all .3s cubic-bezier(.26,.7,.11,.99);
     animation: button .9s cubic-bezier(.29,.97,.3,.96) both;
-    animation-delay: .8s;
+    animation-delay: 1.2s;
 }
 
 .main__button:hover{
     opacity: .9;
 }
 
-
-
-/*======ASIDES======*/
+/* ======ASIDES====== */
 
 .aside__wrapper{
     height: 95%;
@@ -340,20 +354,24 @@ html{
     margin: auto;
 }
 
+/*Adding animation to the first aside*/
+
 #aside1{
-    animation: upward 15s .69s linear infinite;
+    animation: upward 15s 1.2s linear infinite;
 }
 
 .wrapper__1{
-    animation: left-in .8s cubic-bezier(.29,.97,.3,.96) both;
+    animation: left-in .8s .3s cubic-bezier(.29,.97,.3,.96) both;
 }
 
+/*Adding animation to the second aside**/
+
 #aside2{
-    animation: downward 15s .69s linear infinite;
+    animation: downward 15s 1.2s linear infinite;
 }
 
 .wrapper__2{
-    animation: right-in .8s cubic-bezier(.29,.97,.3,.96) both;
+    animation: right-in .8s .3s cubic-bezier(.29,.97,.3,.96) both;
 }
 
 .aside__article{
