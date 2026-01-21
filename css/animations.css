@@ -93,11 +93,9 @@
 @keyframes h1{
     from{
         opacity: 0;
-        filter: drop-shadow(0 0 0px var(--blue));
     }
     to{
         opacity: 1;
-        filter: drop-shadow(0 0 3px var(--blue));
     }
 }
 
@@ -118,7 +116,7 @@
         opacity: 1;
     }
     100%{
-        box-shadow: 0 0 10px var(--lightblue);
         scale: 1.05;
     }
 }
+
