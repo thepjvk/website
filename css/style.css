@@ -60,8 +60,10 @@ p{
 
 /* Color used in the dark mode*/
 
-    --background-main: hsl(220, 15%, 12%);
-    --background-secondary: hsl(220, 15%, 22%);
+    
+    --background-main: hsl(220, 20%, 10%);
+    --background-secondary: hsl(220, 18%, 16%);
+    --background-item: hsl(220, 16%, 20%);
     --title-color: hsl(0, 0%, 97%);
     --subtitle-color: hsl(0, 0%, 78%);
     --paragraph-color: hsl(0, 0%, 68%);
@@ -70,8 +72,8 @@ p{
     --black-for-opacity: #1111117c;
 
 /* The palette colors "RGBs" */
-    --darkblue: hsl(215, 85%, 38%);
-    --blue: hsl(215, 85%, 55%);
+    --darkblue: hsl(215, 85%, 33%);
+    --blue: hsl(215, 85%, 45%);
     --lightblue: hsl(210, 100%, 70%);
     --cyan: hsl(180, 85%, 55%);
     --red: hsl(0, 75%, 50%);
@@ -178,13 +180,14 @@ body{
     flex-direction: column;
     justify-content: start;
     align-items: center;
-    max-width: 1700px;
-    margin: auto;
-    background-color: var(--background-main);
+    background-image: linear-gradient(to bottom, var(--background-main), var(--background-secondary) 10%, var(--background-main));
+    background-attachment: fixed;
 }
 
 html{
-    scrollbar-color: var(--subtitle-color) transparent;
+    scrollbar-color: var(--subtitle-color) var(--background-main);
+    scroll-snap-type: y proximity;
+    max-width: 100%;
 }
 
 /* ======HEADER====== */
@@ -192,14 +195,13 @@ html{
 .header{
     display: flex;
     width: 100%;
-    background-color: var(--background-secondary);
-    height: clamp(40px,6dvh,60px);
+    background-color: var(--background-item);
+    height: clamp(40px,5dvh,60px);
     justify-content: space-between;
     transition: all .3s ease-in-out;
     align-items: center;
     position: relative;
     z-index: 10;
-    box-shadow: 0 0 10px var(--light-shadow);
     user-select: none;
 }
 
@@ -304,11 +306,10 @@ html{
 .main__wrapper{
     display: flex;
     overflow: hidden;
-    height: 94dvh;
-    width: 100%;
+    height: 100dvh;
+    max-width: 1700px;
     background-color: transparent;
     gap: var(--gap-xxxxxxl);
-    background-image: linear-gradient(to bottom, transparent, var(--background-secondary) 20%, transparent)
 }
 
 .main{
@@ -432,6 +433,51 @@ html{
     max-height: 250px;
 }
 
+/* ======FIRST SECTION====== */
+
 .section__1{
-    height: 100dvh ;
+    padding: var(--padding-xx);
+    gap: var(--gap-xxxl);
+    height: 100dvh;
+    max-width: 1700px;
+    scroll-snap-type: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.section__h2{
+    font-size: var(--font-size-h3);
+}
+
+.section__container{
+    display: flex;
+    justify-content: space-evenly;
+    gap: var(--gap-xx);
+    width: 100%;
+}
+
+.section__card{
+    flex: 1;
+    padding: var(--padding-m);
+    display: flex;
+    flex-direction: column;
+    border-radius: 1rem;
+    backdrop-filter: blur(20px);
+    background-color: var(--background-item);
+    color: var(--subtitle-color);
+    height: 260px;
+    gap: var(--gap-xs);
+    text-align: center;
+}
+
+.section__card h3{
+    font-size: var(--font-size-h6);
+    align-self: center;
+}
+
+.section__span{
+    font-size: var(--font-size-h3);
+    color: var(--subtitle-color);
+    font-weight: bolder;
 }
