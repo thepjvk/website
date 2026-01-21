@@ -180,7 +180,6 @@ body{
     max-width: 1700px;
     margin: auto;
     background-color: var(--background-main);
-    height: 200dvh;
 }
 
 html{
@@ -383,4 +382,8 @@ html{
     border-radius: 1rem;
     font-size: var(--font-size-h6);
     margin-top: var(--margin-xxl);
+}
+
+.section__1{
+    height: 100dvh;
 }
