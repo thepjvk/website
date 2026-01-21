@@ -436,7 +436,7 @@ html{
 /* ======FIRST SECTION====== */
 
 .section__1{
-    padding: var(--padding-xx);
+    padding: var(--padding-xxxxxxl);
     gap: var(--gap-xxxl);
     height: 100dvh;
     max-width: 1700px;
@@ -444,6 +444,7 @@ html{
     display: flex;
     flex-direction: column;
     align-items: center;
+    user-select: none;
 }
 
 .section__h2{
@@ -480,4 +481,15 @@ html{
     font-size: var(--font-size-h3);
     color: var(--subtitle-color);
     font-weight: bolder;
+}
+
+.section__images{
+    width: 1200px;
+    max-height: 70px;
+    justify-content: space-evenly;
+    display: flex;
+}
+
+.section__images img{
+    max-height: 100%;
 }
