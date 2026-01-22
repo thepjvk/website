@@ -203,15 +203,14 @@ html{
     position: relative;
     z-index: 10;
     user-select: none;
-    animation-timing-function: ease-in;
 }
 
 .header__in{
-    animation: top-in .3s ease-out both;
+    animation: top-in .3s cubic-bezier(.29,.97,.3,.96) both;
 }
 
 .header__scroll{
-    animation: header-scroll ease-in-out both;
+    animation: header-scroll ease-out both;
     animation-timeline: scroll();
 }
 
