@@ -372,7 +372,7 @@ html{
 }
 
 .main__button:hover::after{
-    left: 130px;
+    left: 120%;
 }
 
 /* ======ASIDES====== */
