@@ -350,12 +350,16 @@ html{
     font-weight: bolder;
     color: var(--title-color);
     border-radius: .7rem;
-    transition: all .3s ;
+    transition: all .3s ease-in-out;
     animation: button .9s cubic-bezier(.29,.97,.3,.96) both;
     animation-delay: 1.15s;
     position: relative;
     overflow: hidden;
-    
+}
+
+.main__button:hover{
+    box-shadow: 0 2px 1.5px var(--title-color);
+    scale: 1.08;
 }
 
 .main__button::after{
