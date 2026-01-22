@@ -385,11 +385,10 @@ html{
     overflow-y: hidden;
     overflow-x: hidden;
     display: flex;
-    flex-direction: column;
     border-radius: 3rem;
+    flex-direction: column;
     user-select: none;
 }
-
 
 .aside{
     width: 80%;
@@ -478,18 +477,25 @@ html{
 }
 
 .section__span{
-    font-size: var(--font-size-h3);
+    font-size: var(--font-size-h4);
     color: var(--subtitle-color);
     font-weight: bolder;
 }
 
 .section__images{
     width: 1200px;
-    max-height: 70px;
+    max-height: 90px;
     justify-content: space-evenly;
     display: flex;
+    gap: var(--gap-xx);
+    flex-wrap: wrap;
 }
 
 .section__images img{
     max-height: 100%;
+    transition: all .3s ease-in-out;
+}
+
+.section__images img:hover{
+    scale: 1.1;
 }
