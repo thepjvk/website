@@ -510,6 +510,7 @@ html{
     color: var(--title-color);
     justify-content: space-evenly;
     padding-bottom: var(--padding-xs);
+    user-select: none;
 }
 
 .bar__item{
