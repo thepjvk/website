@@ -442,7 +442,7 @@ html{
     padding: var(--padding-xxxxxxl);
     gap: var(--gap-xxxl);
     height: 100dvh;
-    max-width: 1700px;
+    max-width: min(100%, 1700px);
     scroll-snap-type: center;
     display: flex;
     flex-direction: column;
@@ -464,15 +464,20 @@ html{
 .card{
     flex: 1;
     padding: var(--padding-m);
+    padding-bottom: var(--padding-m);
     display: flex;
     flex-direction: column;
     border-radius: 1rem;
-    backdrop-filter: blur(20px);
     background-color: var(--background-item);
     color: var(--subtitle-color);
-    height: 260px;
+    max-height: 260px;
     gap: var(--gap-xs);
     text-align: center;
+    overflow-y: hidden;
+    text-overflow: ellipsis;
+    overflow-wrap: break-word;
+    text-wrap: nowrap;
+    max-height: 300px;
 }
 
 .card__title{
@@ -487,7 +492,7 @@ html{
 }
 
 .section__images{
-    width: 1200px;
+    max-width: min(100%, 1700px);
     max-height: 90px;
     justify-content: space-evenly;
     display: flex;
