@@ -223,14 +223,14 @@ html{
     height: 100%;
 }
 
-.header__list{
+.nav__list{
     display: flex;
     height: 100%;
     align-items: center;
     max-width: 100%;
 }
 
-.header__element{
+.list__element{
     display: flex;
     position: relative;
     height: 100%;
@@ -257,7 +257,7 @@ html{
     box-shadow: 0 0 2px var(--light-shadow);
 }
 
-.header__element:hover .header__table{
+.list__element:hover .header__table{
     min-height: min-content;
     display: block;
     opacity: 1;
@@ -276,7 +276,7 @@ html{
     font-size: var(--font-size-h5);
 }
 
-.header__link{
+.element__link{
     display: flex;
     align-items: center;
     font-weight: bolder;
@@ -287,7 +287,7 @@ html{
     font-size: calc(var(--font-size-base) - .2rem);
 }
 
-.header__link:hover{
+.element__link:hover{
     background-color: var(--background-main);
 }
 
@@ -381,7 +381,7 @@ html{
 
 /* ======ASIDES====== */
 
-.aside__wrapper{
+.wrapper__aside{
     height: 95%;
     align-self: center;
     width: 100%;
@@ -403,21 +403,21 @@ html{
 
 /*Adding animation to the first aside*/
 
-#aside1{
+.aside__1{
     animation: upward 15s 1.2s linear infinite;
 }
 
-.wrapper__1{
+.wrapper__aside1{
     animation: left-in .8s .3s cubic-bezier(.29,.97,.3,.96) both;
 }
 
 /*Adding animation to the second aside**/
 
-#aside2{
+.aside__2{
     animation: downward 15s 1.2s linear infinite;
 }
 
-.wrapper__2{
+.wrapper__aside2{
     animation: right-in .8s .3s cubic-bezier(.29,.97,.3,.96) both;
 }
 
@@ -475,7 +475,7 @@ html{
     text-align: center;
 }
 
-.card h3{
+.card__title{
     font-size: var(--font-size-h6);
     align-self: center;
 }
