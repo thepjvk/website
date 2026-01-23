@@ -508,8 +508,7 @@ html{
 .bar__1{
     background-color:  var(--darkblue);
     max-height: 80px;
-    min-width: 100%;
-    max-width: 1700px;
+    width: min(100%, 1700px);
     display: flex;
     color: var(--title-color);
     justify-content: space-evenly;
