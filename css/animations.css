@@ -116,15 +116,3 @@
         opacity: 1;
     }
 }
-
-
-/* Animations for the first section*/
-
-@keyframes section1{
-    from{
-        background-image: linear-gradient(to top, transparent, transparent);
-    }
-    to{
-        background-image: linear-gradient(to top, var(--background-main), transparent);
-    }
-}
