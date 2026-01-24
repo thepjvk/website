@@ -180,7 +180,7 @@ body{
     flex-direction: column;
     justify-content: start;
     align-items: center;
-    background-image: linear-gradient(to bottom, var(--background-main), var(--background-secondary), var(--background-main));
+    background-image: linear-gradient(to bottom, var(--background-main), var(--background-secondary) 20%, var(--background-main));
     background-attachment: fixed;
     max-width: 100%;
     overflow-x: hidden;
@@ -190,7 +190,7 @@ body{
 html{
     scrollbar-color: var(--subtitle-color) var(--background-main);
     scroll-snap-type: y proximity;
-    padding: var(--padding-s);
+    padding: .40rem;
     background-color: var(--background-secondary);
 }
 
@@ -200,14 +200,14 @@ html{
     display: flex;
     background-color: var(--background-secondary);
     height: clamp(40px,5dvh,60px);
-    width: min(50vw,700px);
+    width: 50%;
+    max-width: 800px;
     transition: all .3s ease-in-out;
     align-items: center;
     position: relative;
     z-index: 10;
     user-select: none;
-    border-radius: 0 0 1.5rem 1.5rem;
-    
+    border-radius: 0 0 1.5rem 1.5rem;  
 }
 
 .header::before{
@@ -307,26 +307,15 @@ html{
 }
 
 .element__link{
-    display: flex;
-    align-items: center;
     font-weight: bolder;
     height: 100%;
+    display: flex;
+    align-items: center;
     padding: 0 var(--padding-x);
     transition: all .19s ease-in;
     color: var(--subtitle-color);
     font-size: calc(var(--font-size-base) - .2rem);
 }
-
-.material-symbols-outlined{
-    color: var(--subtitle-color);
-    user-select: none;
-    font-weight: bolder;
-    cursor: pointer;
-    padding-right: var(--padding-m);
-    transition: all .2s ease-in-out;
-}
-
-
 /* ======MAIN SECTION====== */
 
 .main__wrapper{
@@ -465,7 +454,6 @@ html{
 .section__1{
     padding: var(--padding-xxxxxxl);
     gap: var(--gap-xxxl);
-    height: 100dvh;
     max-width: min(100%, 1700px);
     scroll-snap-type: center;
     display: flex;
@@ -483,6 +471,7 @@ html{
     justify-content: space-evenly;
     gap: var(--gap-xx);
     width: 100%;
+    flex-wrap: wrap;
 }
 
 .card{
@@ -491,17 +480,18 @@ html{
     padding-bottom: var(--padding-m);
     display: flex;
     flex-direction: column;
+    max-width: 370px;
+    flex-basis: 300px;
     border-radius: 1rem;
     background-color: var(--background-item);
     color: var(--subtitle-color);
-    max-height: 260px;
+    max-height: 290px;
+    height: 240px;
     gap: var(--gap-xs);
     text-align: center;
     overflow-y: hidden;
     text-overflow: ellipsis;
     overflow-wrap: break-word;
-    text-wrap: nowrap;
-    max-height: 300px;
 }
 
 .card__title{
@@ -517,7 +507,6 @@ html{
 
 .section__images{
     max-width: min(100%, 1700px);
-    max-height: 90px;
     justify-content: space-evenly;
     display: flex;
     gap: var(--gap-xx);
@@ -526,7 +515,7 @@ html{
 
 .section__images img{
     max-width: 100%;
-    max-height: 100%;
+    max-height: 90px;
     transition: all .3s ease-in-out;
 }
 

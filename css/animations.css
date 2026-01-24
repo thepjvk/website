@@ -15,32 +15,53 @@
 @keyframes header-scroll{
     0%{
         position: relative;
+        width: 50%;
+        max-width: 800px;
+        border-radius: 0 0 1.5rem 1.5rem;
     }
     20%{
         position: relative;
         top: -10px;
+        width: 50%;
+        max-width: 800px;
+        border-radius: 0 0 1.5rem 1.5rem;
     }
     30%{
         position: relative;
         top: -100px;
+        width: 50%;
+        max-width: 800px;
+        border-radius: 0 0 1.5rem 1.5rem;
     }
     55%{
         position: relative;
         top: -50px;
+        width: 50%;
+        max-width: 800px;
+        border-radius: 0 0 1.5rem 1.5rem;
     }
     65%{
         position: sticky;
         top: 0;
+        width: 50%;
+        max-width: 800px;
+        border-radius: 0 0 1.5rem 1.5rem;
     }
     75%{
         position: sticky;
         top: 0;
+        width: 50%;
+        max-width: 800px;
+        border-radius: 0 0 1.5rem 1.5rem;
     }
     100%{
         position: sticky;
         top: 0;
         height: 40px;
         background-color: var(--background-secondary);
+        width: 100%;
+        max-width: 1700px;
+        border-radius: 0;
     }
 }
 
