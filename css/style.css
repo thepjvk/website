@@ -273,9 +273,8 @@ html{
     align-items: center;
     padding: 0 0 var(--padding-xs) 0;
     right: -16px;
-    overflow-y: hidden;
     min-width: 120%;
-    top: calc(120%);
+    top: calc(100%);
     color: var(--subtitle-color);
     background-color: var(--background-secondary);
     backdrop-filter: blur(30px);
@@ -283,9 +282,31 @@ html{
     opacity: 0;
     transition: all .3s ease-in-out;
     font-size: var(--font-size-h6);
-    border-radius: 4%;
-    box-shadow: 0 0 2px var(--light-shadow);
+    border-radius: 0 0 1rem 1rem;
 }
+
+.header__table::before{
+    position: absolute;
+    content: '';
+    top: 0;
+    left: -30px;
+    width: 30px;
+    height: 20px;
+    border-radius: 0 1rem 0 0;
+    box-shadow: 12px -5px 7px var(--background-secondary);
+}
+
+.header__table::after{
+    position: absolute;
+    content: '';
+    top: 0;
+    right: -30px;
+    width: 30px;
+    height: 20px;
+    border-radius: 1rem 0 0 0;
+    box-shadow: -12px -5px 7px var(--background-secondary);
+}
+
 
 .list__element:hover .header__table{
     min-height: min-content;
@@ -453,8 +474,10 @@ html{
 
 .section__1{
     padding: var(--padding-xxxxxxl);
+    background-color: var(--background-main);
     gap: var(--gap-xxxl);
-    max-width: min(100%, 1700px);
+    width: 100%;
+    max-width: 1700px;
     scroll-snap-type: center;
     display: flex;
     flex-direction: column;
@@ -474,6 +497,13 @@ html{
     flex-wrap: wrap;
 }
 
+.section__1 .card{
+    animation: fade-up ease-in-out both;
+    animation-timeline: view();
+    animation-range-start: entry 30%;
+    animation-range-end: entry 100%;
+}
+
 .card{
     flex: 1;
     padding: var(--padding-m);
@@ -482,8 +512,8 @@ html{
     flex-direction: column;
     max-width: 370px;
     flex-basis: 300px;
-    border-radius: 1rem;
-    background-color: var(--background-item);
+    border-radius: 2rem 1rem 2rem 1rem;
+    background-color: var(--background-secondary);
     color: var(--subtitle-color);
     max-height: 290px;
     height: 240px;
@@ -492,6 +522,7 @@ html{
     overflow-y: hidden;
     text-overflow: ellipsis;
     overflow-wrap: break-word;
+    box-shadow: 0 0 5px #74747480;
 }
 
 .card__title{
@@ -523,7 +554,7 @@ html{
     scale: 1.1;
 }
 
-.bar__1{
+.bar{
     background-color:  var(--darkblue);
     max-height: 80px;
     width: min(100%, 1700px);
