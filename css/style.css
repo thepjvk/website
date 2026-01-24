@@ -180,30 +180,58 @@ body{
     flex-direction: column;
     justify-content: start;
     align-items: center;
-    background-image: linear-gradient(to bottom, var(--background-main), var(--background-secondary) 10%, var(--background-main));
+    background-image: linear-gradient(to bottom, var(--background-main), var(--background-secondary), var(--background-main));
     background-attachment: fixed;
+    max-width: 100%;
+    overflow-x: hidden;
+    border-radius: .7rem;
 }
 
 html{
     scrollbar-color: var(--subtitle-color) var(--background-main);
     scroll-snap-type: y proximity;
-    max-width: 100%;
+    padding: var(--padding-s);
+    background-color: var(--background-secondary);
 }
 
 /* ======HEADER====== */
 
 .header{
     display: flex;
-    width: 100%;
-    background-color: var(--background-item);
+    background-color: var(--background-secondary);
     height: clamp(40px,5dvh,60px);
-    justify-content: space-between;
+    width: min(50vw,700px);
     transition: all .3s ease-in-out;
     align-items: center;
     position: relative;
     z-index: 10;
     user-select: none;
+    border-radius: 0 0 1.5rem 1.5rem;
+    
 }
+
+.header::before{
+    position: absolute;
+    content: '';
+    top: 0;
+    left: -30px;
+    width: 30px;
+    height: 20px;
+    border-radius: 0 1rem 0 0;
+    box-shadow: 12px -5px 7px var(--background-secondary);
+}
+
+.header::after{
+    position: absolute;
+    content: '';
+    top: 0;
+    right: -30px;
+    width: 30px;
+    height: 20px;
+    border-radius: 1rem 0 0 0;
+    box-shadow: -12px -5px 7px var(--background-secondary);
+}
+
 
 .header__in{
     animation: top-in .3s cubic-bezier(.29,.97,.3,.96) both;
@@ -221,6 +249,8 @@ html{
 
 .header__nav{
     height: 100%;
+    margin: auto;
+    padding: 0 var(--padding-xxxxl);
 }
 
 .nav__list{
@@ -285,10 +315,6 @@ html{
     transition: all .19s ease-in;
     color: var(--subtitle-color);
     font-size: calc(var(--font-size-base) - .2rem);
-}
-
-.element__link:hover{
-    background-color: var(--background-main);
 }
 
 .material-symbols-outlined{
@@ -382,8 +408,6 @@ html{
 /* ======ASIDES====== */
 
 .wrapper__aside{
-    height: 95%;
-    align-self: center;
     width: 100%;
     flex: 1;
     overflow-y: hidden;
