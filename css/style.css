@@ -180,7 +180,6 @@ body{
     flex-direction: column;
     justify-content: start;
     align-items: center;
-    background-image: linear-gradient(to bottom, var(--background-main), var(--background-secondary) 20%, var(--background-main));
     background-attachment: fixed;
     max-width: 100%;
     overflow-x: hidden;
@@ -191,7 +190,7 @@ html{
     scrollbar-color: var(--subtitle-color) var(--background-main);
     scroll-snap-type: y proximity;
     padding: .40rem;
-    background-color: var(--background-secondary);
+    background-color: var(--background-main);
 }
 
 /* ======HEADER====== */
