@@ -181,16 +181,18 @@ body{
     justify-content: start;
     align-items: center;
     background-attachment: fixed;
-    max-width: 100%;
     overflow-x: hidden;
     border-radius: .7rem;
+    max-width: 100dvw;
+    background-color: var(--background-main);
 }
 
 html{
     scrollbar-color: var(--subtitle-color) var(--background-main);
     scroll-snap-type: y proximity;
-    padding: .40rem;
-    background-color: var(--background-main);
+    padding: .50rem;
+    max-width: 100dvw;
+    background-color: var(--background-secondary);
 }
 
 /* ======HEADER====== */
@@ -206,7 +208,7 @@ html{
     position: relative;
     z-index: 10;
     user-select: none;
-    border-radius: 0 0 1.5rem 1.5rem;  
+    border-radius: 0 0 2rem 2rem;  
 }
 
 .header::before{
@@ -216,8 +218,8 @@ html{
     left: -30px;
     width: 30px;
     height: 20px;
-    border-radius: 0 1rem 0 0;
-    box-shadow: 12px -5px 7px var(--background-secondary);
+    border-radius: 0 2rem 0 0;
+    box-shadow: .75rem -.31rem .43rem var(--background-secondary);
 }
 
 .header::after{
@@ -227,8 +229,8 @@ html{
     right: -30px;
     width: 30px;
     height: 20px;
-    border-radius: 1rem 0 0 0;
-    box-shadow: -12px -5px 7px var(--background-secondary);
+    border-radius: 2rem 0 0 0;
+    box-shadow: -.75em -.31em .4em var(--background-secondary);
 }
 
 
@@ -475,8 +477,7 @@ html{
     padding: var(--padding-xxxxxxl);
     background-color: var(--background-main);
     gap: var(--gap-xxxl);
-    width: 100%;
-    max-width: 1700px;
+    width: clamp(100%,1700px,100dvw);
     scroll-snap-type: center;
     display: flex;
     flex-direction: column;
@@ -519,9 +520,7 @@ html{
     gap: var(--gap-xs);
     text-align: center;
     overflow-y: hidden;
-    text-overflow: ellipsis;
-    overflow-wrap: break-word;
-    box-shadow: 0 0 5px #74747480;
+    box-shadow: 0 0 7.5px #ffffff2d;
 }
 
 .card__title{
