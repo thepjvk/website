@@ -246,6 +246,7 @@ html{
 .header img{
     max-height: 100%;
     padding-left: var(--padding-m);
+    max-width: 100%;
 }
 
 .header__nav{
@@ -555,7 +556,7 @@ html{
 
 .card{
     max-width: 380px;
-    height: 480px;
+    height: 440px;
     background-color: var(--background-secondary);
     padding: var(--padding-l);
     border-radius: 1rem;
@@ -564,7 +565,7 @@ html{
     color: var(--subtitle-color);
     row-gap: var(--gap-xx);
     padding: var(--padding-x);
-    box-shadow: .6px 2px 1px var(--subtitle-color);
+    box-shadow: .6px 2px 1px var(--paragraph-color);
 }
 
 .card__title{
