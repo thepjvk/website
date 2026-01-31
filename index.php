@@ -74,7 +74,6 @@
     <script src="js/main.js"></script>
 <?php
 
-
 ?>
 </body>
 </html>
