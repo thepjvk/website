@@ -379,8 +379,12 @@ html{
     animation-delay: .8s;
 }
 
+.main__container{
+    display: flex;
+    column-gap: var(--gap-s);
+}
+
 .main__button{
-    background-image: linear-gradient(340deg, var(--darkblue), var(--blue)); 
     padding: var(--padding-xs) var(--padding-x);
     font-size: calc(var(--font-size-h6) - .3rem);
     border: 0px solid transparent;
@@ -390,8 +394,13 @@ html{
     transition: all .3s ease-in-out;
     animation: button .9s cubic-bezier(.29,.97,.3,.96) both;
     animation-delay: 1.15s;
+    width: 190px;
     position: relative;
     overflow: hidden;
+}
+
+.button__1{
+    background-image: linear-gradient(340deg, var(--darkblue), var(--blue)); 
 }
 
 .main__button:hover{
@@ -414,6 +423,12 @@ html{
 
 .main__button:hover::after{
     left: 120%;
+}
+
+.button__2{
+    color: var(--title-color);
+    background-color: var(--background-item);
+    border: 2px solid var(--blue);
 }
 
 /* ======ASIDES====== */
