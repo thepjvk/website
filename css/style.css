@@ -524,19 +524,43 @@ html{
 }
 
 .section h2::before{
-    position: absolute;
-    left: -140px;
-    top: 5px;
+    animation: arrow1 1.1s ease-in-out infinite alternate both;
     content: '-->';
+    
+}
+
+.section h2::after{
+    content: '<--';
+    animation: arrow2 1.1s ease-in-out infinite alternate both;
 }
 
 
-.section h2::after{
+@keyframes arrow2{
+    from{
     position: absolute;
     right: -145px;
     top: 5px;
-    content: '<--';
+    }
+    to{
+    position: absolute;
+    right: -185px;
+    top: 5px;
+    }
 }
+
+@keyframes arrow1{
+    from{
+    position: absolute;
+    left: -140px;
+    top: 5px;
+    }
+    to{
+    position: absolute;
+    left: -185px;
+    top: 5px;
+    }
+}
+
 
 .section__container{
     display: flex;
