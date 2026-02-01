@@ -183,7 +183,8 @@ body{
     background-attachment: fixed;
     overflow-x: hidden;
     border-radius: .7rem;
-    max-width: 100dvw;
+    margin: auto;
+    width: 100%;
     background-color: var(--background-main);
 }
 
@@ -191,7 +192,8 @@ html{
     scrollbar-color: var(--subtitle-color) var(--background-main);
     scroll-snap-type: y proximity;
     padding: .50rem;
-    max-width: 100dvw;
+    max-width: 1600px;
+    margin: auto;
     background-color: var(--background-secondary);
 }
 
@@ -201,36 +203,11 @@ html{
     display: flex;
     background-color: var(--background-secondary);
     height: clamp(40px,5dvh,60px);
-    width: 50%;
-    max-width: 800px;
     transition: all .3s ease-in-out;
     align-items: center;
-    position: relative;
     z-index: 10;
     user-select: none;
     border-radius: 0 0 2rem 2rem;  
-}
-
-.header::before{
-    position: absolute;
-    content: '';
-    top: 0;
-    left: -30px;
-    width: 30px;
-    height: 20px;
-    border-radius: 0 2rem 0 0;
-    box-shadow: .75rem -.31rem .43rem var(--background-secondary);
-}
-
-.header::after{
-    position: absolute;
-    content: '';
-    top: 0;
-    right: -30px;
-    width: 30px;
-    height: 20px;
-    border-radius: 2rem 0 0 0;
-    box-shadow: -.75em -.31em .4em var(--background-secondary);
 }
 
 
@@ -345,7 +322,7 @@ html{
     display: flex;
     overflow: hidden;
     height: 100dvh;
-    max-width: 1700px;
+    max-width: 100%;
     background-color: transparent;
     gap: var(--gap-xxxxxxl);
 }
@@ -493,7 +470,7 @@ html{
 .bar{
     background-color:  var(--darkblue);
     max-height: 80px;
-    width: min(100%, 1700px);
+    width: 100%;
     display: flex;
     color: var(--title-color);
     justify-content: space-evenly;
@@ -521,10 +498,10 @@ html{
     padding: var(--padding-xxxxxxl);
     gap: var(--gap-xxxl);
     height: 100dvh;
-    width: 100%;
+    min-width: 100%;
+    max-width: 1600px;
     overflow-y: scroll;
     scrollbar-color: transparent transparent;
-
 }
 
 .section{
@@ -556,7 +533,7 @@ html{
 
 .card{
     max-width: 380px;
-    height: 440px;
+    max-height: 440px;
     background-color: var(--background-secondary);
     padding: var(--padding-l);
     border-radius: 1rem;
@@ -570,10 +547,12 @@ html{
 
 .card__title{
     font-size: var(--font-size-h5);
+    font-weight: bolder;
 }
 
 .card__paragrahp{
     margin-bottom: var(--margin-xs);
+    text-wrap: wrap;
 }
 
 .card__img{
