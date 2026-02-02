@@ -181,7 +181,6 @@ body{
     justify-content: start;
     align-items: center;
     background-attachment: fixed;
-    overflow-x: hidden;
     border-radius: .7rem;
     margin: auto;
     width: 100%;
@@ -195,6 +194,7 @@ html{
     max-width: 1600px;
     margin: auto;
     background-color: var(--background-secondary);
+    scroll-behavior: smooth;
 }
 
 /* ======HEADER====== */
@@ -205,9 +205,10 @@ html{
     height: clamp(40px,5dvh,60px);
     transition: all .3s ease-in-out;
     align-items: center;
+    width: 50%;
     z-index: 10;
     user-select: none;
-    border-radius: 0 0 2rem 2rem;  
+    border-radius: 0 0 1.5rem 1.5rem;  
 }
 
 
@@ -333,7 +334,7 @@ html{
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: var(--gap-xx);
+    gap: var(--gap-xxxl);
     padding-top: var(--padding-xxxl);
     text-align: center;
     flex: 4;
@@ -359,7 +360,7 @@ html{
 
 .main__container{
     display: flex;
-    column-gap: var(--gap-s);
+    column-gap: var(--gap-m);
 }
 
 .main__button{
@@ -469,8 +470,8 @@ html{
 
 .bar{
     background-color:  var(--darkblue);
-    max-height: 80px;
     width: 100%;
+    height: 15%;
     display: flex;
     color: var(--title-color);
     justify-content: space-evenly;
@@ -495,24 +496,26 @@ html{
 /* ======FIRST SECTION====== */
 
 .sections__wrapper{
-    padding: var(--padding-xxxxxxl);
     gap: var(--gap-xxxl);
-    height: 100dvh;
     min-width: 100%;
     max-width: 1600px;
-    overflow-y: scroll;
-    scrollbar-color: transparent transparent;
+    position: sticky;
+    top: 0;
+    height: 100dvh;
 }
 
 .section{
     display: flex;
     flex-direction: column;
-    padding: var(--padding-m);
-    height: 100%;
+    height: 100dvh;
     align-items: center;
     row-gap: var(--gap-x);
-    width: 100%;
     user-select: none;
+}
+
+.section__1{
+    height: 100%;
+    width: 100%;
 }
 
 .section h2{
@@ -534,42 +537,14 @@ html{
     animation: arrow2 1.1s ease-in-out infinite alternate both;
 }
 
-
-@keyframes arrow2{
-    from{
-    position: absolute;
-    right: -145px;
-    top: 5px;
-    }
-    to{
-    position: absolute;
-    right: -185px;
-    top: 5px;
-    }
-}
-
-@keyframes arrow1{
-    from{
-    position: absolute;
-    left: -140px;
-    top: 5px;
-    }
-    to{
-    position: absolute;
-    left: -185px;
-    top: 5px;
-    }
-}
-
-
 .section__container{
     display: flex;
     height: 100%;
     column-gap: var(--gap-x);
     width: 100%;
     justify-content: space-between;
+    padding: var(--padding-xxxl);
 }
-
 
 .card{
     max-width: 380px;
@@ -615,6 +590,10 @@ html{
 .card__button:hover{
     box-shadow: .6px .8px 1px var(--subtitle-color);
     scale: 1.1;
+}
+
+.card__button:active{
+    scale: 1.06;
 }
 
 .container__bar{

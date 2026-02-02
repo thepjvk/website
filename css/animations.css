@@ -51,7 +51,7 @@
         border-radius: 0 0 1.5rem 1.5rem;
     }
     100%{
-        position: sticky;
+        position: fixed;
         top: 0;
         height: 40px;
         width: 100%;
@@ -113,6 +113,7 @@
     }
     to{
         opacity: 1;
+        filter: drop-shadow(3px 4px .2px var(--title-color));
     }
 }
 
@@ -135,3 +136,30 @@
 }
 
 
+/* Animations for the arrows*/
+
+@keyframes arrow2{
+    from{
+    position: absolute;
+    right: -145px;
+    top: 5px;
+    }
+    to{
+    position: absolute;
+    right: -185px;
+    top: 5px;
+    }
+}
+
+@keyframes arrow1{
+    from{
+    position: absolute;
+    left: -140px;
+    top: 5px;
+    }
+    to{
+    position: absolute;
+    left: -185px;
+    top: 5px;
+    }
+}
