@@ -180,18 +180,23 @@ body{
     flex-direction: column;
     justify-content: start;
     align-items: center;
-    background-attachment: fixed;
     border-radius: .7rem;
+    width: 100%;
     margin: auto;
     width: 100%;
     background-color: var(--background-main);
+    scroll-snap-align: center;
+    scroll-behavior: smooth;
+}
+
+main, section{
+    scroll-snap-type: mandatory;
 }
 
 html{
     scrollbar-color: var(--subtitle-color) var(--background-main);
-    scroll-snap-type: y proximity;
+    max-width: 1366px;
     padding: .50rem;
-    max-width: 1600px;
     margin: auto;
     background-color: var(--background-secondary);
     scroll-behavior: smooth;
@@ -202,7 +207,7 @@ html{
 .header{
     display: flex;
     background-color: var(--background-secondary);
-    height: 5dvh;
+    height: min(60px,5dvh);
     transition: all .3s ease-in-out;
     align-items: center;
     width: 50%;
@@ -471,7 +476,7 @@ html{
 .bar{
     background-color:  var(--darkblue);
     width: 100%;
-    height: 15%;
+    height: clamp(80px,5dvh,7rem);
     display: flex;
     color: var(--title-color);
     justify-content: space-evenly;
@@ -495,13 +500,6 @@ html{
 
 /* ======FIRST SECTION====== */
 
-.sections__wrapper{
-    gap: var(--gap-xxxl);
-    min-width: 100%;
-    max-width: 1600px;
-    min-height: 100dvh;
-}
-
 .section{
     display: flex;
     flex-direction: column;
@@ -516,7 +514,6 @@ html{
     font-family: "Press Start 2P";
     color: var(--blue);
     font-size: var(--font-size-h3);
-    padding-bottom: var(--padding-x);
     position: relative;
 }
 
@@ -559,7 +556,7 @@ html{
     font-weight: bolder;
 }
 
-.card__paragrahp{
+.card__paragraph{
     margin-bottom: var(--margin-xs);
     text-wrap: wrap;
 }
@@ -600,16 +597,39 @@ html{
 
 /* ====== SECTION 2 ======*/
 
+.space__bar{
+    height: 90%;
+    width: .1%;
+    border-right: 3px dashed var(--blue);
+    background-clip: text;
+    background-image: linear-gradient(to top, var(--darkblue), var(--darkblue));
+}
 
 .section__2{
-    height: 95dvh;
+    height: clamp(600px,100dvh,1400px);
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+}
+
+.section__2 h2{
     width: 100%;
-    padding: var(--padding-x);
+    height: clamp(80px,5dvh,7rem);
+    padding: var(--padding-xs);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:  var(--darkblue);
+    color: var(--title-color);
 }
 
 .section__space{
     display: flex;
     flex-direction: row;
+    height: 100%;
+    width: 100%;
+    justify-content: space-between;
+    padding: var(--padding-l);
 }
 
 .space__info{
@@ -625,4 +645,6 @@ html{
     width: 400px;
     height: 150px;
 }
+
+
 

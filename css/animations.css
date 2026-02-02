@@ -16,47 +16,58 @@
     0%{
         position: relative;
         width: 50%;
-        max-width: 800px;
         border-radius: 0 0 1.5rem 1.5rem;
     }
     20%{
-        position: relative;
         top: -10px;
         width: 50%;
-        max-width: 800px;
         border-radius: 0 0 1.5rem 1.5rem;
     }
     30%{
-        position: relative;
         top: -100px;
         width: 50%;
         border-radius: 0 0 1.5rem 1.5rem;
     }
     55%{
-        position: relative;
         top: -50px;
-        width: 50%;
+        width: 60%;
         border-radius: 0 0 1.5rem 1.5rem;
     }
     65%{
         position: sticky;
         top: 0;
-        width: 50%;
+        width: 70%;
         border-radius: 0 0 1.5rem 1.5rem;
     }
     75%{
         position: sticky;
         top: 0;
-        width: 50%;
+        width: 85%;
+        border-radius: 0 0 1.5rem 1.5rem;
+    }
+    80%{
+        position: sticky;
+        top: 0;
+        height: 40px;
+        width: 85%;
+        box-shadow: 1.5px 3px 1px var(--stitle-color);
+        border-radius: 0 0 1.5rem 1.5rem;
+    }
+    90%{
+        position: sticky;
+        top: 0;
+        height: 40px;
+        width: 85%;
+        background-color: var(--background-secondary);
         border-radius: 0 0 1.5rem 1.5rem;
     }
     100%{
-        position: fixed;
+        position: sticky;
         top: 0;
         height: 40px;
-        width: 100%;
+        width: 85%;
         background-color: var(--background-secondary);
-        border-radius: 0;
+        border-radius: 0 0 1.5rem 1.5rem;
     }
 }
 
