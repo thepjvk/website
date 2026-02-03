@@ -85,7 +85,7 @@
 @keyframes right-in{
     from{
         position: relative;
-        right: -260px;
+        right: -100%;
     }
     to{
         position: relative;
@@ -107,7 +107,7 @@
 @keyframes left-in{
     from{
         position: relative;
-        left: -260px;
+        left: -100%;
     }
     to{
         position: relative;
@@ -174,3 +174,6 @@
     top: 5px;
     }
 }
+
+/*Animations for the first section*/
+
