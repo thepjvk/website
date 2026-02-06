@@ -671,6 +671,10 @@ html{
     margin-bottom: var(--margin-m);
 }
 
+.info__img:nth-child(2){
+    height: 300px;
+}
+
 .info__paragraph{
     font-size: calc(var(--font-size-p) - .1rem);
 }
