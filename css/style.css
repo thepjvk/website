@@ -371,7 +371,7 @@ html{
 }
 
 .main__h2{
-    font-size: var(--font-size-h4);
+    font-size: var(--font-size-h5);
     color: var(--title-color);
     animation: h2 .9s cubic-bezier(.29,.97,.3,.96) both;
     animation-delay: .8s;
@@ -383,7 +383,7 @@ html{
 }
 
 .main__button{
-    padding: var(--padding-xs) var(--padding-x);
+    padding: var(--padding-xs) var(--padding-m);
     font-size: calc(var(--font-size-h6) - .3rem);
     border: 0px solid transparent;
     font-weight: bolder;
@@ -659,6 +659,7 @@ html{
     align-items: center;
     color: var(--paragraph-color);
 }
+
 
 .info__title{
     font-size: var(--font-size-h4);
