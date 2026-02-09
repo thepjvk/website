@@ -1,0 +1,34 @@
+@media screen and (max-width: 880px){
+    .section__1 h2::before{
+    display: none;
+    }
+
+    .section__1 h2::after{
+    display: none;
+    }
+
+    .container__bar{
+        display: none;
+    }
+
+    .section__space, .section__container, section__2{
+        flex-direction: column;
+        align-items: center;
+        row-gap: var(--gap-x);
+        column-gap: 0;
+    }
+
+    .card{
+        max-width: 400px;
+    }
+}
+
+@media screen and (max-width: 780px){
+    .main__wrapper aside{
+        display: none;
+    }
+
+    .header{
+        min-width: 70%;
+    }
+}
