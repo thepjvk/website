@@ -39,4 +39,8 @@
     }
 }
 
-
+@media screen and (max-width: 430px){
+    .section__2 h2{
+        font-size: var(--font-size-h7);
+    }    
+}
