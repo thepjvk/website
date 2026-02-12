@@ -1,8 +1,5 @@
 
-@media screen and (max-width: 970px) {
-    .html{
-        scroll-behavior: y initial;
-    }
+@media screen and (min-width: 970px) {
 }
 
 @media screen and (max-width: 880px){

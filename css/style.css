@@ -198,10 +198,13 @@ html{
     margin: auto;
     background-color: var(--background-secondary);
     scroll-behavior: smooth;
+}
+
+.html-scroll-type{
     scroll-snap-type: y mandatory;
 }
 
-.header-main__wrapper, section{
+.scroll-align{
     scroll-snap-align: center;
 }
 
