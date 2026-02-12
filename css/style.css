@@ -187,10 +187,6 @@ body{
     background-color: var(--background-main);
 }
 
-main, section{
-    scroll-snap-type: mandatory;
-}
-
 html{
     scrollbar-color: var(--subtitle-color) var(--background-main);
     max-width: 1366px;
@@ -201,7 +197,7 @@ html{
 }
 
 .html-scroll-type{
-    scroll-snap-type: y mandatory;
+    scroll-snap-type: y proximity;
 }
 
 .scroll-align{
@@ -627,6 +623,7 @@ html{
     display: flex;
     flex-direction: column;
     justify-content: stretch;
+    max-width: 100%;
 }
 
 .section__2 h2{
@@ -646,12 +643,6 @@ html{
     position: absolute;
     top: -25px;
     left: 10px;
-}
-
-img[src="images/Graphic.webp"]{
-    width: 350px;
-    height: 250px;
-    border: 10px solid white;
 }
 
 .card__container{
