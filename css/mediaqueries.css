@@ -31,6 +31,10 @@
         display: none;
     }
 
+    .wrapper__aside{
+        display: none;
+    }
+
     .header{
         min-width: 70%;
     }
