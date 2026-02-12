@@ -559,6 +559,10 @@ html{
     row-gap: var(--gap-xx);
     padding: var(--padding-x);
     box-shadow: .6px 2px 1px var(--paragraph-color);
+    animation: card-in both;
+    animation-timeline: view();
+    animation-range-start: entry 0%;
+    animation-range-end: cover 40%;
 }
 
 .card__title{
@@ -636,8 +640,6 @@ html{
     color: var(--title-color);
 }
 
-
-
 .section__2 .card .card__title{
     font-size: 1.4rem;
     font-family: "Press Start 2P";
@@ -646,7 +648,13 @@ html{
     left: 10px;
 }
 
-.section__space{
+img[src="images/Graphic.webp"]{
+    width: 350px;
+    height: 250px;
+    border: 10px solid white;
+}
+
+.card__container{
     display: flex;
     align-items: center;
     height: 100%;
