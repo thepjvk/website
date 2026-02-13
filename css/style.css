@@ -635,6 +635,10 @@ html{
     align-items: center;
     background-color:  var(--darkblue);
     color: var(--title-color);
+    animation: h2-in both;
+    animation-timeline: view();
+    animation-range-start: 0% entry;
+    animation-range-end: 100% entry;
 }
 
 .section__2 .card .card__title{
@@ -662,12 +666,20 @@ html{
     min-height: 100dvh;
     display: flex;
     flex-direction: column;
-    padding: var(--padding-xx) var(--padding-xx);
+    padding: var(--padding-xx) 0;
 }
 
 .section__3 h2{
     align-self: center;
     text-align: center;
+    height: clamp(80px,5dvh,7rem);
+    padding: var(--padding-xs);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color:  var(--darkblue);
+    color: var(--title-color);
     animation: h2-in both;
     animation-timeline: view();
     animation-range-start: 0% entry;
