@@ -58,9 +58,7 @@ p{
 
 :root{
 
-/* Color used in the dark mode*/
-
-    
+/* Colors used in the dark mode*/
     --background-main: hsl(220, 20%, 10%);
     --background-secondary: hsl(220, 18%, 16%);
     --background-item: hsl(220, 16%, 20%);
