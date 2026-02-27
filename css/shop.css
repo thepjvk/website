@@ -208,10 +208,12 @@ html{
     user-select: none;
     border-radius: 0 0 1.5rem 1.5rem;
     align-self: center;
+    position: sticky;
+    top: 0;
 }
 
 .header__in{
-    animation: top-in .5s cubic-bezier(.29,.97,.3,.96) both;
+    animation: top-in .7s cubic-bezier(.29,.97,.3,.96) both;
 }
 
 .header__scroll{
