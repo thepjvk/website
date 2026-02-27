@@ -1,8 +1,22 @@
 const header = document.querySelector("#header");
+const aside = document.querySelector("#aside");
+const main = document.querySelector("#main");
 
 header.addEventListener("animationend", (e) => {
-    console.log(e);
     if (e.animationName = "top-in"){
-        header.style = "width: 100%; border-radius: 0;"
-    }
-})
+        header.classList.add("header__width");
+    };
+});
+
+header.addEventListener("transitionend", (e) =>{
+    if (e.transitionProperty = "width"){
+        aside.classList.add("aside-in")
+    }; 
+});
+
+aside.addEventListener("animationend", (e) =>{
+    if (e.animationName = "aside-shop-in"){
+        main.classList.add("main-in");
+    };
+});
+

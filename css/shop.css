@@ -176,11 +176,8 @@ p{
 body{
     display: flex;
     flex-direction: column;
-    justify-content: start;
-    align-items: center;
     border-radius: .7rem;
     width: 100%;
-    height: 97.8dvh;
     margin: auto;
     background-color: var(--background-main);
 }
@@ -199,7 +196,7 @@ html{
 .header{
     display: flex;
     background-color: var(--background-secondary);
-    max-height: 27px;
+    max-height: 5dvh;
     width: 45%;
     transition: all .5s;
     transition-timing-function: cubic-bezier(.61,.38,0,.99);
@@ -208,17 +205,17 @@ html{
     user-select: none;
     border-radius: 0 0 1.5rem 1.5rem;
     align-self: center;
-    position: sticky;
     top: 0;
+    flex: 1;
 }
 
 .header__in{
-    animation: top-in .7s cubic-bezier(.29,.97,.3,.96) both;
+    animation: top-in-shop .7s cubic-bezier(.29,.97,.3,.96) both;
 }
 
-.header__scroll{
-    animation: header-scroll ease-out both;
-    animation-timeline: scroll();
+.header__width{
+    width: 100%;
+    border-radius: 0;
 }
 
 .header img{
@@ -316,4 +313,45 @@ html{
     transition: all .19s ease-in;
     color: var(--subtitle-color);
     font-size: calc(var(--font-size-base) - .2rem);
+}
+
+/* ====== MAIN ======*/
+
+.wrapper{
+    width: 100%;
+    display: flex;
+    flex: 10;
+}
+
+.aside{
+    flex: 1.2;
+    background-color: var(--background-secondary);
+    opacity: 0;
+}
+
+.aside-in{
+    animation: aside-shop-in .3s ease-in both;
+}
+
+.main{
+    flex: 4;
+    width: 100%;
+    display: grid;
+    padding: var(--padding-xxl) 0 0 .2rem;
+    grid-template-columns: repeat(4,247.5px);
+    grid-template-rows: repeat(4,245px);
+    grid-auto-rows: 247.5px;
+    gap: var(--gap-xs);
+    opacity: 0;
+}
+
+.main-in{
+    animation: main-shop-in .3s cubic-bezier(.4,.2,1,.58) both;
+}
+
+.game{
+    background-color: var(--background-item);
+    max-width: 247.5px;
+    max-height: 245px;
+    border-radius: 1rem;
 }
