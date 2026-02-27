@@ -146,35 +146,6 @@
     }
 }
 
-
-/* Animations for the arrows*/
-
-@keyframes arrow2{
-    from{
-    position: absolute;
-    right: -145px;
-    top: 5px;
-    }
-    to{
-    position: absolute;
-    right: -185px;
-    top: 5px;
-    }
-}
-
-@keyframes arrow1{
-    from{
-    position: absolute;
-    left: -140px;
-    top: 5px;
-    }
-    to{
-    position: absolute;
-    left: -185px;
-    top: 5px;
-    }
-}
-
 @keyframes card-in{
     from{
         opacity: 0;
