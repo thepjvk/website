@@ -225,7 +225,7 @@ html{
 
 
 .header__in{
-    animation: top-in .3s cubic-bezier(.29,.97,.3,.96) both;
+    animation: top-in .5s cubic-bezier(.29,.97,.3,.96) both;
 }
 
 .header__scroll{
@@ -364,7 +364,7 @@ html{
 }
 
 .main__h2{
-    font-size: var(--font-size-h5);
+    font-size: calc(var(--font-size-h5) - .2rem);
     color: var(--title-color);
     animation: h2 .9s cubic-bezier(.29,.97,.3,.96) both;
     animation-delay: .8s;
@@ -430,7 +430,7 @@ html{
     overflow-y: hidden;
     overflow-x: hidden;
     display: flex;
-    border-radius: 3rem;
+    border-radius: 1rem;
     flex-direction: column;
     user-select: none;
 }
@@ -445,21 +445,21 @@ html{
 /*Adding animation to the first aside*/
 
 .aside__1{
-    animation: upward 15s 1.2s linear infinite;
+    animation: upward 15s 1.4s linear infinite;
 }
 
 .wrapper__aside1{
-    animation: left-in .8s .3s cubic-bezier(.29,.97,.3,.96) both;
+    animation: left-in .8s .5s cubic-bezier(.29,.97,.3,.96) both;
 }
 
 /*Adding animation to the second aside**/
 
 .aside__2{
-    animation: downward 15s 1.2s linear infinite;
+    animation: downward 15s 1.4s linear infinite;
 }
 
 .wrapper__aside2{
-    animation: right-in .8s .3s cubic-bezier(.29,.97,.3,.96) both;
+    animation: right-in .8s .5s cubic-bezier(.29,.97,.3,.96) both;
 }
 
 .aside__article{

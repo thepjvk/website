@@ -15,5 +15,6 @@ if (browserWidth > 970){
     section2.classList.add("scroll-align");
     section3.classList.add("scroll-align");
 } else {
-    console.log("Your screen is large!!!");
-}
+    console.log("Your screen is small!!!");
+};
+
