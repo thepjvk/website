@@ -15,6 +15,7 @@ header.addEventListener("animationend", (e) => {
 
 header.addEventListener("transitionend", (e) =>{
     if (e.transitionProperty = "width"){
+        header.style = "border-bottom: 2px solid var(--main-border);"
         aside.classList.add("aside-in")
     }; 
 });
