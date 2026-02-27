@@ -234,7 +234,7 @@ html{
 }
 
 .header img{
-    max-height: 20px;
+    max-height: 50px;
     padding-left: var(--padding-m);
     max-width: 100%;
 }
