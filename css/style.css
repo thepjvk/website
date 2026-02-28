@@ -221,6 +221,7 @@ html{
     user-select: none;
     border-radius: 0 0 1.5rem 1.5rem;
     align-self: center;
+    box-shadow: 0 0 10px var(--black-for-opacity);
 }
 
 

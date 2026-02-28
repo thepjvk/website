@@ -200,7 +200,7 @@ html{
     display: flex;
     background-color: var(--background-secondary);
     max-height: 5dvh;
-    width: 45%;
+    width: 50%;
     transition: all .5s;
     transition-timing-function: cubic-bezier(.61,.38,0,.99);
     align-items: center;
@@ -427,4 +427,4 @@ html{
     .aside{
         display: none;
     }
-}
+};
