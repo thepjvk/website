@@ -202,7 +202,7 @@ html{
     max-height: 5dvh;
     width: 50%;
     transition: all .5s;
-    transition-timing-function: cubic-bezier(.61,.38,0,.99);
+    transition-timing-function: cubic-bezier(.22,.63,.18,.88);
     align-items: center;
     z-index: 10;
     user-select: none;
@@ -246,68 +246,6 @@ html{
     height: 100%;
 }
 
-.header__table{
-    position: absolute;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 0 0 var(--padding-xs) 0;
-    right: -16px;
-    min-width: 120%;
-    top: calc(100%);
-    color: var(--subtitle-color);
-    background-color: var(--background-secondary);
-    backdrop-filter: blur(30px);
-    display: none;
-    opacity: 0;
-    transition: all .3s ease-in-out;
-    font-size: var(--font-size-h6);
-    border-radius: 0 0 1rem 1rem;
-    box-shadow: 0 0 5px var(--black-shadow);
-}
-
-.header__table::before{
-    position: absolute;
-    content: '';
-    top: 0;
-    left: -30px;
-    width: 30px;
-    height: 20px;
-    border-radius: 0 1rem 0 0;
-    box-shadow: 12px -5px 7px var(--background-secondary);
-}
-
-.header__table::after{
-    position: absolute;
-    content: '';
-    top: 0;
-    right: -30px;
-    width: 30px;
-    height: 20px;
-    border-radius: 1rem 0 0 0;
-    box-shadow: -12px -5px 7px var(--background-secondary);
-}
-
-
-.list__element:hover .header__table{
-    min-height: min-content;
-    display: block;
-    opacity: 1;
-}
-
-.header__table thead, .header__table tbody{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-}
-
-.header__table thead{
-    margin-bottom: var(--margin-xs);
-    font-weight: bolder;
-    font-size: var(--font-size-h5);
-}
-
 .element__link{
     font-weight: bolder;
     height: 100%;
@@ -342,7 +280,7 @@ html{
     flex: 4;
     width: 100%;
     display: grid;
-    padding: .9rem .7rem 0 .7rem;
+    padding: .9rem .8rem 0 .8rem;
     grid-template-columns: repeat(auto-fit,minmax(240px,1fr));
     grid-template-rows: repeat(4,320px);
     grid-auto-rows: 320px;
@@ -357,7 +295,7 @@ html{
 }
 
 .game{
-    background-color: var(--background-item);
+    background-color: var(--background-secondary);
     height: 100%;
     border-radius: 1rem;
     outline: 2px solid var(--games-border);

@@ -259,13 +259,13 @@ html{
     height: 100%;
 }
 
-.header__table{
+.element__list{
     position: absolute;
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 0 0 var(--padding-xs) 0;
-    right: -16px;
+    right: -12px;
     min-width: 120%;
     top: calc(100%);
     color: var(--subtitle-color);
@@ -278,7 +278,7 @@ html{
     border-radius: 0 0 1rem 1rem;
 }
 
-.header__table::before{
+.element__list::before{
     position: absolute;
     content: '';
     top: 0;
@@ -289,7 +289,7 @@ html{
     box-shadow: 12px -5px 7px var(--background-secondary);
 }
 
-.header__table::after{
+.element__list::after{
     position: absolute;
     content: '';
     top: 0;
@@ -301,24 +301,25 @@ html{
 }
 
 
-.list__element:hover .header__table{
+.list__element:hover .element__list{
     min-height: min-content;
     display: block;
     opacity: 1;
 }
 
-.header__table thead, .header__table tbody{
+.list__element li{
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 100%;
 }
 
-.header__table thead{
-    margin-bottom: var(--margin-xs);
-    font-weight: bolder;
-    font-size: var(--font-size-h5);
+.list__element li a{
+    padding: var(--padding-s) .1rem;
+    color: var(--subtitle-color);
+    font-size: var(--font-size-small);
+    font-weight: bold;
 }
+
 
 .element__link{
     font-weight: bolder;
