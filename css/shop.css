@@ -249,8 +249,11 @@ html{
 .element__link{
     font-weight: bolder;
     height: 100%;
+    text-wrap: nowrap;
     display: flex;
     align-items: center;
+    overflow-x: auto;
+    margin: auto;
     padding: 0 var(--padding-x);
     transition: all .19s ease-in;
     color: var(--subtitle-color);
