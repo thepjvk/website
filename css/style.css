@@ -196,6 +196,7 @@ html{
 
 .html-scroll-type{
     scroll-snap-type: y proximity;
+    scroll-behavior: smooth;
 }
 
 .scroll-align{
@@ -270,8 +271,8 @@ html{
     top: calc(100%);
     color: var(--subtitle-color);
     background-color: var(--background-secondary);
-    backdrop-filter: blur(30px);
     display: none;
+    box-shadow: 0 4px 5px var(--black-for-opacity);
     opacity: 0;
     transition: all .3s ease-in-out;
     font-size: var(--font-size-h6);
