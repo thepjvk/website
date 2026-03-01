@@ -289,7 +289,7 @@ html{
     grid-template-rows: repeat(4,320px);
     grid-auto-rows: 320px;
     column-gap: var(--gap-l);
-    row-gap: var(--gap-x);
+    row-gap: var(--gap-l);
     opacity: 0;
     margin-top: var(--margin-xx);
 }
