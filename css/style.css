@@ -220,7 +220,6 @@ html{
     width: 50%;
     z-index: 10;
     user-select: none;
-    overflow-x: auto;
     margin: auto;
     border-radius: 0 0 1.5rem 1.5rem;
     align-self: center;
@@ -385,13 +384,13 @@ html{
 }
 
 .main__button{
-    padding: var(--padding-xs) var(--padding-m);
+    padding: var(--padding-xs) var(--padding-l);
     font-size: calc(var(--font-size-h6) - .5rem);
     border: 0px solid transparent;
     font-weight: bolder;
     color: var(--title-color);
     border-radius: .7rem;
-    transition: all .3s ease-in-out;
+    transition: all .3s ease-out;
     animation: button .9s cubic-bezier(.29,.97,.3,.96) both;
     animation-delay: 1.15s;
     width: 180px;
@@ -404,25 +403,8 @@ html{
 }
 
 .main__button:hover{
-    scale: 1.03;
-}
-
-.main__button::after{
-    content: '';
-    height: 140%;
-    width: 25px;
-    position: absolute;
-    top: -10px;
-    left: -5%;
-    background-image: linear-gradient(to left, transparent, var(--title-color), transparent );
-    transform: rotate(20deg);
-    transition: all .3s ease-in-out;
-    visibility: hidden;    
-}
-
-.main__button:hover::after{
-    left: 110%;
-    visibility: visible;
+    box-shadow: 0 2px 2px var(--subtitle-color);
+    scale: 1.06;
 }
 
 .button__2{

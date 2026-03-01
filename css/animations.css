@@ -204,3 +204,15 @@
         opacity: 1;
     }
 }
+
+
+@keyframes game-in{
+    from{
+        opacity: 0;;
+        scale: .7;
+    }
+    to{
+        scale: 1;
+        opacity: 1;
+    }
+}

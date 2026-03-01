@@ -282,15 +282,16 @@ html{
 .main{
     flex: 4;
     width: 100%;
+    height: 100%;
     display: grid;
     padding: .9rem .8rem 0 .8rem;
-    grid-template-columns: repeat(auto-fit,minmax(min(240px,100%),1fr));
+    grid-template-columns: repeat(auto-fit,minmax(min(200px,100%),1fr));
     grid-template-rows: repeat(4,320px);
     grid-auto-rows: 320px;
-    gap: var(--gap-l);
-    row-gap: var(--gap-xx);
+    column-gap: var(--gap-l);
+    row-gap: var(--gap-x);
     opacity: 0;
-    margin-top: var(--margin-x);
+    margin-top: var(--margin-xx);
 }
 
 .main-in{
@@ -305,6 +306,10 @@ html{
     display: flex;
     flex-direction: column;
     padding: .4rem;
+    animation: game-in both;
+    animation-timeline: view();
+    animation-range-start: entry 0%;
+    animation-range-end: cover 20%;
 }
 
 .game__img{
