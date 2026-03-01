@@ -1,6 +1,8 @@
 const header = document.querySelector("#header");
 const aside = document.querySelector("#aside");
 const main = document.querySelector("#main");
+const buttonApps = document.querySelector(".button__games");
+const buttonGames = document.querySelector(".button__apps");
 
 header.addEventListener("animationend", (e) => {
     if (e.animationName = "top-in"){
@@ -27,6 +29,16 @@ if (window.innerWidth >= 1033){
             main.classList.add("main-in")
         }
     })
-}
+};
+
+buttonApps.addEventListener("click", () =>{
+    buttonGames.classList.remove("aside__button__select");
+    buttonApps.classList.toggle("aside__button__select");
+});
+
+buttonGames.addEventListener("click", () =>{
+    buttonApps.classList.remove("aside__button__select");
+    buttonGames.classList.toggle("aside__button__select");
+});
 
 
