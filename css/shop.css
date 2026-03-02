@@ -280,7 +280,7 @@ html{
 }
 
 .aside-in{
-    animation: aside-shop-in .3s ease-in both;
+    animation: enter-in .3s ease-in both;
 }
 
 .aside__h2{
@@ -297,7 +297,8 @@ html{
     justify-content: center;
     align-items: center;
     width: 100%;
-    background-color: color-mix(in srgb, var(--background-main) 50%, transparent 50%);
+    align-self: center;
+    background-color: color-mix(in srgb, var(--background-main) 80%, transparent 20%);
 }
 
 .aside__button{
@@ -313,6 +314,41 @@ html{
 
 .aside__button__select{
     border-bottom: 1px solid var(--subtitle-color);
+}
+
+.aside__containerlist{
+    display: flex;
+}
+
+.aside__list{
+    user-select: none;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    row-gap: var(--gap-xs);
+}
+
+.aside__list li{
+    padding: var(--padding-xs) var(--padding-l);
+    background-color: color-mix(in srgb, var(--background-main) 50%, transparent 50%);
+    color: var(--subtitle-color);
+    width: 75%;
+    margin: auto;
+    text-align: center;
+    corner-shape: bevel;
+    border-radius: 1rem;
+    transition: all .2s ease-in-out;
+    border: 2px solid var(--games-border);
+}
+
+.aside__list li:hover{
+    width: 80%;
+    scale: 1.08;
+}
+
+.list__apps{
+    display: none;
 }
 
 .main{
@@ -331,7 +367,7 @@ html{
 }
 
 .main-in{
-    animation: main-shop-in .3s cubic-bezier(.4,.2,1,.58) both;
+    animation: enter-in .3s cubic-bezier(.4,.2,1,.58) both;
 }
 
 .game{

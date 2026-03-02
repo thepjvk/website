@@ -1,8 +1,11 @@
 const header = document.querySelector("#header");
 const aside = document.querySelector("#aside");
 const main = document.querySelector("#main");
-const buttonApps = document.querySelector(".button__games");
-const buttonGames = document.querySelector(".button__apps");
+const buttonGames = document.querySelector(".button__games");
+const buttonApps = document.querySelector(".button__apps");
+const listGames = document.querySelector(".list__games");
+const listGamesArray = listGames.children;
+const listApps = document.querySelector(".list__apps");
 
 header.addEventListener("animationend", (e) => {
     if (e.animationName = "top-in"){
@@ -31,14 +34,21 @@ if (window.innerWidth >= 1033){
     })
 };
 
-buttonApps.addEventListener("click", () =>{
-    buttonGames.classList.remove("aside__button__select");
-    buttonApps.classList.toggle("aside__button__select");
-});
 
 buttonGames.addEventListener("click", () =>{
     buttonApps.classList.remove("aside__button__select");
     buttonGames.classList.toggle("aside__button__select");
+    listApps.style = "display: none;";
+    listGames.style = "display: flex;";
 });
+
+buttonApps.addEventListener("click", () =>{
+    buttonGames.classList.remove("aside__button__select");
+    buttonApps.classList.toggle("aside__button__select");
+    listGames.style = "display: none;";
+    listApps.style = "display: flex;";
+});
+
+
 
 

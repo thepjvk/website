@@ -364,14 +364,14 @@ html{
     font-size: var(--font-size-h1);
     padding-top: var(--padding-xxxxxl);
     color: var(--blue);
-    animation: h1 .2s cubic-bezier(.29,.97,.3,.96) both;
+    animation: enter-in .2s cubic-bezier(.29,.97,.3,.96) both;
     animation-delay: .4s;
 }
 
 .main__h2{
     font-size: calc(var(--font-size-h5) - .2rem);
     color: var(--title-color);
-    animation: h2 .9s cubic-bezier(.29,.97,.3,.96) both;
+    animation: enter-in .9s cubic-bezier(.29,.97,.3,.96) both;
     animation-delay: .8s;
 }
 
@@ -391,7 +391,7 @@ html{
     color: var(--title-color);
     border-radius: .7rem;
     transition: all .3s ease-out;
-    animation: button .9s cubic-bezier(.29,.97,.3,.96) both;
+    animation: enter-in .9s cubic-bezier(.29,.97,.3,.96) both;
     animation-delay: 1.15s;
     width: 180px;
     position: relative;
@@ -624,7 +624,7 @@ html{
     align-items: center;
     background-color:  var(--darkblue);
     color: var(--title-color);
-    animation: h2-in both;
+    animation: enter-in both;
     animation-timeline: view();
     animation-range-start: 0% entry;
     animation-range-end: 100% entry;
@@ -669,7 +669,7 @@ html{
     width: 100%;
     background-color:  var(--darkblue);
     color: var(--title-color);
-    animation: h2-in both;
+    animation: enter-in both;
     animation-timeline: view();
     animation-range-start: 0% entry;
     animation-range-end: 100% entry;
@@ -695,7 +695,7 @@ html{
     border-radius: .5rem;
     justify-content: space-around;
     align-items: center;
-    animation: distro-in both;
+    animation: enter-in both;
     animation-timeline: view();
     animation-range-start: 0% entry;
     animation-range-end: 100% entry;
