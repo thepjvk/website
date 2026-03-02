@@ -411,8 +411,3 @@ html{
     scale: 1.04;
 }
 
-@media screen and (max-width: 1032px){
-    .aside{
-        display: none;
-    }
-};

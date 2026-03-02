@@ -1,4 +1,6 @@
 
+/* === MEDIAQUERIES FOR THE MAIN OR INDEX.HTML === */
+
 @media screen and (min-width: 970px) {
 }
 
@@ -43,4 +45,17 @@
     }    
 }
 
+@media screen and (max-width: 499px){
+    .bar__1 *{
+        display: none;
+    }
+}
 
+
+/* === MEDIAQUERIES FOR THE SHOP===*/
+
+@media screen and (max-width: 1032px){
+    .wrapper .aside{
+        display: none;
+    }
+};
