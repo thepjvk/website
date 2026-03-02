@@ -244,7 +244,6 @@ html{
 .header__nav{
     height: 100%;
     margin: auto;
-    overflow-y: hidden;
     padding: 0 var(--padding-xxxxl);
 }
 
