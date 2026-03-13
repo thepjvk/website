@@ -6,16 +6,16 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/mediaqueries.css">
-    <link rel="stylesheet" href="css/animations.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="shortcut icon" href="images/Logo-better-removebg-preview.png" type="image/x-icon">
+    <link rel="stylesheet" href="{{ url_for('static', filename='mediaqueries.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='animations.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="shortcut icon" href="{{ url_for('static', filename='images/Logo-better-removebg-preview.png') }}" type="image/x-icon">
     <title>Indev stuff</title>
 </head>
 <body id="body">
     <div class="header-main__wrapper">
     <header class="header header__in" id="header">
-        <img src="images/Website-logo.webp" alt="Logo" class="header__logo">
+        <img src="{{ url_for ('static', filename='images/Website-logo.webp') }}" alt="Logo" class="header__logo">
         <nav class="header__nav">
             <ul class="nav__list">
                 <li class="list__element">
@@ -39,16 +39,16 @@
     <div class="main__wrapper" id="main">
         <div class="wrapper__aside wrapper__aside1">
             <aside class="aside aside__1">
-                <article class="aside__article"><img src="images/game1.webp" alt="Dota 2" title="Dota 2"></article>
-                <article class="aside__article"><img src="images/game2.webp" alt="CS Go" title="CS Go"></article>
-                <article class="aside__article"><img src="images/game3.webp" alt="Minecraft" title="Minecraft"></article>
-                <article class="aside__article"><img src="images/game4.webp" alt="Stardew valley" title="Stardew valley"></article>
+            <article class="aside__article"><img src="{{ url_for ('static', filename='images/game1.webp') }}" alt="Dota 2" title="Dota 2"></article>
+            <article class="aside__article"><img src="{{ url_for ('static', filename='images/game2.webp') }}" alt="CS Go" title="CS Go"></article>
+            <article class="aside__article"><img src="{{ url_for ('static', filename='images/game3.webp') }}" alt="Minecraft" title="Minecraft"></article>
+            <article class="aside__article"><img src="{{ url_for ('static', filename='images/game4.webp') }}" alt="Stardew valley" title="Stardew valley"></article>
             </aside>
             <aside aria-hidden="true" class="aside aside__1">
-                <article class="aside__article"><img src="images/game1.webp" alt="Dota 2" title="Dota 2"></article>
-                <article class="aside__article"><img src="images/game2.webp" alt="CS Go" title="CS Go"></article>
-                <article class="aside__article"><img src="images/game3.webp" alt="Minecraft" title="Minecraft"></article>
-                <article class="aside__article"><img src="images/game4.webp" alt="Stardew valley" title="Stardew valley"></article>
+            <article class="aside__article"><img src="{{ url_for ('static', filename='images/game1.webp') }}" alt="Dota 2" title="Dota 2"></article>
+            <article class="aside__article"><img src="{{ url_for ('static', filename='images/game2.webp') }}" alt="CS Go" title="CS Go"></article>
+            <article class="aside__article"><img src="{{ url_for ('static', filename='images/game3.webp') }}" alt="Minecraft" title="Minecraft"></article>
+            <article class="aside__article"><img src="{{ url_for ('static', filename='images/game4.webp') }}" alt="Stardew valley" title="Stardew valley"></article>
             </aside>
         </div>
         <main class="main">
@@ -61,16 +61,16 @@
         </main>
         <div class="wrapper__aside wrapper__aside2">
             <aside class="aside aside__2">
-                <article class="aside__article"><img src="images/game5.webp" alt="Terratia" title="Terraria"></article>
-                <article class="aside__article"><img src="images/game6.webp" alt="The witcher 3" title="The Witcher 3"></article>
-                <article class="aside__article"><img src="images/game7.webp" alt="Factorio" title="Factorio"></article>
-                <article class="aside__article"><img src="images/game8.webp" style="scale: 1.5;" alt="Hollow Night" title="Hollow Night"></article>
+                <article class="aside__article"><img src="{{ url_for ('static',filename='images/game5.webp') }}" alt="Terratia" title="Terraria"></article>
+                <article class="aside__article"><img src="{{ url_for ('static',filename='images/game6.webp') }}" alt="The witcher 3" title="The Witcher 3"></article>
+                <article class="aside__article"><img src="{{ url_for ('static',filename='images/game7.webp') }}" alt="Factorio" title="Factorio"></article>
+                <article class="aside__article"><img src="{{ url_for ('static',filename='images/game8.webp') }}" style="scale: 1.5;" alt="Hollow Night" title="Hollow Night"></article>
             </aside>
             <aside aria-hidden="true" class="aside aside__2">
-                <article class="aside__article"><img src="images/game5.webp" alt="Terratia" title="Terraria"></article>
-                <article class="aside__article"><img src="images/game6.webp" alt="The witcher 3" title="The Witcher 3"></article>
-                <article class="aside__article"><img src="images/game7.webp" alt="Factorio" title="Factorio"></article>
-                <article class="aside__article"><img src="images/game8.webp" style="scale: 1.5;" alt="Hollow Night" title="Hollow Night"></article>
+                <article class="aside__article"><img src="{{ url_for ('static',filename='images/game5.webp') }}" alt="Terratia" title="Terraria"></article>
+                <article class="aside__article"><img src="{{ url_for ('static',filename='images/game6.webp') }}" alt="The witcher 3" title="The Witcher 3"></article>
+                <article class="aside__article"><img src="{{ url_for ('static',filename='images/game7.webp') }}" alt="Factorio" title="Factorio"></article>
+                <article class="aside__article"><img src="{{ url_for ('static',filename='images/game8.webp') }}" style="scale: 1.5;" alt="Hollow Night" title="Hollow Night"></article>
             </aside>
         </div>
     </div>

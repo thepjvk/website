@@ -1,0 +1,27 @@
+:root{
+
+    /* Colors used in the light mode*/
+
+    --background-main: hsl(210, 20%, 97%);
+    --background-secondary: hsl(210, 16%, 93%);
+    --background-item: hsl(0, 0%, 100%);
+    --title-color: hsl(222, 47%, 11%);
+    --subtitle-color: hsl(215, 25%, 27%);
+    --paragraph-color: hsl(215, 16%, 47%);
+    --shadow: hsla(222, 47%, 11%, 0.06);
+    --light-shadow: hsla(222, 47%, 11%, 0.03);
+    --black-for-opacity: hsla(222, 47%, 11%, 0.5);
+    /* The palette colors "RGBs" */
+
+    --darkblue: hsl(221, 83%, 53%);
+    --blue: hsl(217, 91%, 60%);
+    --lightblue: hsl(200, 95%, 65%);
+    --cyan: hsl(185, 85%, 45%);
+    --red: hsl(0, 84%, 60%);
+    --green: hsl(142, 70%, 40%);
+    --orange: hsl(24, 95%, 53%);
+    --orange2: hsl(38, 92%, 50%);
+    --yellow: hsl(48, 96%, 53%);
+    --purple: hsl(262, 83%, 58%);
+    --pink: hsl(330, 81%, 60%);
+}

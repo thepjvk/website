@@ -1,0 +1,61 @@
+
+/* === MEDIAQUERIES FOR THE MAIN OR INDEX.HTML === */
+
+@media screen and (min-width: 970px) {
+}
+
+@media screen and (max-width: 880px){
+    .section__1 h2::before{
+    display: none;
+    }
+
+    .section__1 h2::after{
+    display: none;
+    }
+
+    .container__bar{
+        display: none;
+    }
+
+    .card__container, .section__container{
+        flex-direction: column;
+        align-items: center;
+        row-gap: var(--gap-xxxxxl);
+    }
+
+}
+
+@media screen and (max-width: 780px){
+    .main__wrapper aside{
+        display: none;
+    }
+
+    .wrapper__aside{
+        display: none;
+    }
+
+    .header{
+        min-width: 70%;
+    }
+}
+
+@media screen and (max-width: 430px){
+    .section__2 h2{
+        font-size: var(--font-size-h7);
+    }    
+}
+
+@media screen and (max-width: 499px){
+    .bar__1 *{
+        display: none;
+    }
+}
+
+
+/* === MEDIAQUERIES FOR THE SHOP===*/
+
+@media screen and (max-width: 1032px){
+    .wrapper .aside{
+        display: none;
+    }
+};

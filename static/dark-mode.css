@@ -1,0 +1,26 @@
+:root{
+    /* Colors used in the dark mode*/
+
+    --background-main: hsl(220, 20%, 10%);
+    --background-secondary: hsl(220, 18%, 16%);
+    --background-item: hsl(220, 16%, 20%);
+    --title-color: hsl(0, 0%, 97%);
+    --subtitle-color: hsl(0, 0%, 78%);
+    --paragraph-color: hsl(0, 0%, 68%);
+    --shadow: hsl(0, 0%, 35%);
+    --light-shadow: hsl(0, 0%, 45%);
+    --black-for-opacity: #1111117c;
+
+    /* The palette colors "RGBs" */
+    --darkblue: hsl(215, 85%, 33%);
+    --blue: hsl(215, 85%, 45%);
+    --lightblue: hsl(210, 100%, 70%);
+    --cyan: hsl(180, 85%, 55%);
+    --red: hsl(0, 75%, 50%);
+    --green: hsl(135, 70%, 50%);
+    --orange: hsl(25, 85%, 55%);
+    --orange2: hsl(45, 85%, 55%);
+    --yellow: hsl(55, 90%, 55%);
+    --purple: hsl(275, 70%, 55%);
+    --pink: hsl(330, 75%, 60%);
+}

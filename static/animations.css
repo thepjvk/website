@@ -1,0 +1,173 @@
+/* ====== HERE ARE ALL THE ANIMATIONS ====== */
+
+/*Animations for the navbar*/
+@keyframes top-in{
+    from{
+        position: relative;
+        top: -75px;
+    }
+    to{
+        position: fixed;
+        top: 0;
+    }
+}
+
+@keyframes top-in-shop{
+    from{
+        position: relative;
+        top: -75px;
+    }
+    to{
+        position: fixed;
+        top: 0;
+    }
+}
+
+@keyframes header-scroll{
+    0%{
+        position: relative;
+        width: 50%;
+        border-radius: 0 0 1.5rem 1.5rem;
+    }
+    20%{
+        top: -10px;
+        width: 50%;
+        border-radius: 0 0 1.5rem 1.5rem;
+    }
+    30%{
+        top: -100px;
+        width: 50%;
+        border-radius: 0 0 1.5rem 1.5rem;
+    }
+    55%{
+        top: -50px;
+        width: 60%;
+        border-radius: 0 0 1.5rem 1.5rem;
+    }
+    65%{
+        position: sticky;
+        top: 0;
+        width: 70%;
+        border-radius: 0 0 1.5rem 1.5rem;
+    }
+    75%{
+        position: sticky;
+        top: 0;
+        width: 85%;
+        border-radius: 0 0 1.5rem 1.5rem;
+    }
+    80%{
+        position: sticky;
+        top: 0;
+        height: 40px;
+        width: 85%;
+        box-shadow: 1.5px 3px 1px var(--stitle-color);
+        border-radius: 0 0 1.5rem 1.5rem;
+    }
+    90%{
+        position: sticky;
+        top: 0;
+        height: 40px;
+        width: 85%;
+        background-color: var(--background-secondary);
+        border-radius: 0 0 1.5rem 1.5rem;
+    }
+    100%{
+        position: sticky;
+        top: 0;
+        height: 40px;
+        width: 85%;
+        background-color: var(--background-secondary);
+        border-radius: 0 0 1.5rem 1.5rem;
+    }
+}
+
+/*Animations for the first aside*/
+
+@keyframes downward{
+    from{
+        transform: translateY(-100%);
+    }
+    to{
+        transform: translateY(0%);
+    }
+}
+
+@keyframes right-in{
+    from{
+        position: relative;
+        right: -100%;
+    }
+    to{
+        position: relative;
+        right: 0;
+    }
+}
+
+/*Animations for the second aside*/
+
+@keyframes upward{
+    from{
+        transform: translateY(0);
+    }
+    to{
+        transform: translateY(-100%);
+    }
+}
+
+@keyframes left-in{
+    from{
+        position: relative;
+        left: -100%;
+    }
+    to{
+        position: relative;
+        left: 0;
+    }
+}
+
+/*Animations for the elements in the main*/
+
+
+@keyframes h1{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+        filter: drop-shadow(3px 4px .2px var(--title-color));
+    }
+}
+
+@keyframes card-in{
+    from{
+        opacity: 0;
+        scale: .7;
+    }
+    to{
+        opacity: 1;
+        scale: 1;
+    }
+}
+
+@keyframes enter-in{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+/*Animations for the shop*/
+
+@keyframes game-in{
+    from{
+        opacity: 0;;
+        scale: .7;
+    }
+    to{
+        scale: 1;
+        opacity: 1;
+    }
+}
